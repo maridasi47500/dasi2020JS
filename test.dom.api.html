@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+	<link rel="stylesheet" href="./style.css">
 
 </head>
 
@@ -42,6 +43,9 @@
         </div>
         <div id="next">Suivant</div>
     </div>
+	<div id="liste" hidden=true>[[],[],[]]</div> <!-- "eval(strings[0])" 
+	var new_date = new Date(); 
+	JSON.parse(document.getElementById("liste").innerHTML).filter(x=>new Date(x[1])< new Date() && new Date(x[2]) > new Date()) -->
 
 
 </body>
