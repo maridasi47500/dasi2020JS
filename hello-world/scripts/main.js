@@ -19,14 +19,58 @@ myImage.addEventListener('click', function() {
       myImage.setAttribute('src', 'images/firefox-icon.png');
     }
 });
+$('.btn').hover(function(){
+  $('.btn').show().animate({'font-size':'3em'},1000)
+});
+
+$('.display3').hover(function(){
+	$('.display3').animate({  borderSpacing: -360 }, {
+		step: function(now,fx) {
+			  $(this).css('-webkit-transform','rotate('+now+'deg)'); 
+			  $(this).css('-moz-transform','rotate('+now+'deg)');
+			  $(this).css('transform','rotate('+now+'deg)');
+			  $(this).css('font-size','green');
+
+		},
+		duration:'slow'
+	});
+});
+
+
+$('.edit').click(function() {
+  setUserName();
+  
+});
+$('.first-title').click(function() {
+  setUserName();
+  
+});
+
+
+let myHeading = document.querySelector('h1');
+let name = document.createElement("div");
 
 function setUserName() {
-  let myName = prompt('Veuillez saisir votre nom.');
+  let myName = prompt('Veuillez saisir quelque chose d\' autre à la place.');
   localStorage.setItem('nom', myName);
-  myHeading.textContent = 'Hello ' + myName;
+  myHeading.textContent = 'Hello ';
+  name.textContent = myName+" !";
+  name.classList.add("titlename");
+  myHeading.appendChild(name);
+  name.addEventListener('click', function() {
+	setUserName();
+  });
 }
 
-/*if (!localStorage.getItem('nom')) {
+/*
+  : ;
+  : ;
+
+  : ;
+  transform-origin:;
+}
+
+if (!localStorage.getItem('nom')) {
   setUserName();
 } else {
   let storedName = localStorage.getItem('nom');

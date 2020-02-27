@@ -2,10 +2,26 @@ html {
   font-size: 10px;
   font-family: 'Open Sans', sans-serif;
 }
+.titlename {
+	margin: 0;
+  text-align:center;
+  padding: 60px 0;
+  color: #00539F;
+  text-shadow: 3px 3px 8px black;
 
+  -webkit-transform: translate(100px) rotate(20deg);
+  -webkit-transform-origin: 0 -650px;
+
+  transform: translate(100px) rotate(20deg);
+  transform-origin: 0 -650px;
+}
 
 h1 {
   font-size: 60px;
+  text-align: center;
+}
+div {
+  font-size: 30px;
   text-align: center;
 }
 
@@ -26,16 +42,74 @@ body {
   background-color: #FF9500;
   padding: 0 20px 20px 20px;
   border: 5px solid black;
+  text-align:center;
 }
+.display1 {
+  margin: 0;
+  text-align:center;
+  padding: 10px 0;
+  color: #00539F;
+  text-shadow: 3px 3px 8px black;
+
+
+  -webkit-transform: translate(100px) rotate(20deg);
+
+}
+.display3 {
+	  margin: 0;
+  padding: 10px 0;
+  color: #00539F;
+  text-shadow: 3px 3px 8px black;
+
+
+  -webkit-transform: translate(100px) rotate(20deg);
+
+}
+.display4 {
+	  margin: 0;
+  padding: 10px 0;
+  color: #00539F;
+  text-shadow: 3px 3px 8px black;
+
+
+
+}
+.display5 {
+  margin: 0;
+  padding: 10px 0;
+  color: #00539F;
+  text-shadow: 3px 3px 8px black;
+
+
+
+}
+.display6 {
+	  margin: 0;
+  padding: 10px 0;
+
+
+
+
+
+
+}
+.display2 {
+  margin: 0;
+  padding: 10px 0;
+  color: #00539F;
+
 
 h1 {
   margin: 0;
-  padding: 20px 0;
-  color: #00539F;
-  text-shadow: 3px 3px 1px black;
+
+}
+
 }
 
 img {
   display: block;
   margin: 0 auto;
+}
+.stylemyimage {
+	transform: rotate(0.5turn);
 }
