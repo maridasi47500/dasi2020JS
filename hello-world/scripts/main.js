@@ -38,7 +38,7 @@ $('.display3').hover(function(){
 
 
 $('.edit').click(function() {
-  setUserName();
+  setText();
   
 });
 $('.first-title').click(function() {
@@ -49,7 +49,15 @@ $('.first-title').click(function() {
 
 let myHeading = document.querySelector('h1');
 let name = document.createElement("div");
-
+function setText() {
+  let myName = prompt('Veuillez saisir quelque chose d\' autre à la place.');
+  localStorage.setItem('texte', myName);
+  name.textContent = myName;
+  myHeading.appendChild(name);
+  name.addEventListener('click', function() {
+	setUserName();
+  });
+}
 function setUserName() {
   let myName = prompt('Veuillez saisir quelque chose d\' autre à la place.');
   localStorage.setItem('nom', myName);
